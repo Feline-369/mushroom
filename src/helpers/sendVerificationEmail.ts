@@ -8,10 +8,11 @@ export async function sendVerificationEmail(
     verifyCode: string
 ):Promise<ApiResponse> {
     try {
+        //basic email formal from resend email 
         await resend.emails.send({
             from: 'felinefelicious369@gmail.com',
             to: email,
-            subject: 'MushRoom Verification Code',
+            subject: 'MushRoom message Verification Code',
             react: VerificationEmail({ username, otp: verifyCode }),
           });
           return { success: true, message: 'Verification email sent successfully.' };

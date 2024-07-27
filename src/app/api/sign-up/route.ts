@@ -1,4 +1,4 @@
-//api 
+//api always have route file like common sense b
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/user";
 import bcrypt from 'bcryptjs';
